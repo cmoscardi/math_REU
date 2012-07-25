@@ -1,9 +1,8 @@
-\usepackage{color}
 \documentclass{beamer}
-
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{color}
 
 \newtheorem{prop}{Proposition}
 \newtheorem{cor}[prop]{Corollary}
@@ -72,13 +71,60 @@
 \frame{\titlepage}
 
 \frame{
-  \framtetitle{The Concordance Group}
-  Recall that two knots $K$ and $J$ are {\bf isotopic} if they can be smoothly deformed into each other. Or formally, $\exists$ a homotopy $\kappa:S^{1}\times[0,1]\longrightarrow \mathbb{R}^3$ such that $\kappa \times{0}=K$, and $\kappa \times{1}=J$, and $\kappa \times {t}$ is a smooth embedding, $\forall t\in [0,1]$. Now, we generalise this idea by considering the deformation occured in an extra dimension: we say knots $K$ and $J$ are {\bf topological concordant/(smoothly) concordant} if they can be topologically/smoothly (resp.) deformed into each other in four dimensions. The rigorous definition is: 
+  \frametitle{The Concordance Group}
+  \\
+  Recall that two knots $K$ and $J$ are {\bf isotopic} if they can be smoothly deformed into each other. Or formally, $\exists$ a homotopy $\kappa:S^{1}\times[0,1]\longrightarrow \mathbb{R}^3$ such that $\kappa \times{0}=K$, and $\kappa \times{1}=J$, and $\kappa \times {t}$ is a smooth embedding, $\forall t\in [0,1]$. Now, we generalise this idea by considering the deformation occured in an extra dimension: we say knots $K$ and $J$ are {\bf topologically concordant/(smoothly) concordant} if they can be topologically/smoothly (resp.) deformed into each other in four dimensions. The rigorous definition is: 
+}
+
+\frame{
+  \frametitle{The Concordance Group}
   \begin{def concordance}
     Oriented knots K and J are {\bf topologically concordant/(smoothly) concordant} if $\exists$ annulus $A = S^{1}\times[0,1]$ topologically/smoothly (resp.) embedded into $S^{3}\times [0,1]$, such that $A\cap (S^{3}\times {0})= K\subseteq (S^{3}\times {0})$, and  $A\cap (S^{3}\times {1})= -J\subseteq (S^{3}\times {1})$.
     \\
     Denote $K \sim_{top}J$ for topological concordance, and $K \sim_{c}J$ for (smooth) concordance).
   \end{def concordance}
+}
+\frame{
+  \frametitle{The Concordance Group}
+  \hspace{6mm}Now comes to our central (algebraic/topological) structure of interest: we note that $({Knots},\sharp) $ forms a monoid, on which $\sim_{c}$ is an equivalence relation. Hence we may define:
+  \begin{def concordance}
+    The {\bf Concordance Group} is $\mathcal{C}:=({Knots},\sharp)/\sim_{c}$ 
+  \end{def concordance}
+Note that $\forall$ knots K, -K is the mirror image of K with opposite orientation
+
+  Also, we have the following intuitive definition:
+  \begin{def concordance}
+    A smooth knot concordant to the unknot is called a {\bf slice knot}. A smooth knoth topologically concordant to the unknot is called a {\bf topologically slice knot}.
+  \end{def concordance}
+}
+\frame{
+  \frametitle{Final Notes}
+  $\exists$ an ordering on knots modulo concordance based on a relation $\epsilon$, to be discussed later
+  
+  \begin{def concordance}
+    In a totally ordered group, $a$ and $b$ are said to be {\bf archimedian equivalent} if $a<n*b$ and $b<m*a$ for some $n,m \in \N$ 
+  \end{def concordance}
+  
+  \begin{defn}
+    If $a$ and $b$ are not Archimedian equivalent, and $a>b$, we say $a>>b$ (i.e. $a$ is ``much greater'' than $b$)
+  \end{defn}
+
+  \begin{prop}
+    If $a_1<<a_2<<... $, then the $a_i$ are linearly independent
+  \end{prop}
+}
+
+\frame{
+  \frametitle{Result}
+  Our main result was as follows:
+  \\
+  \begin{itemize}
+    \item A family of Top Slice knots, all linearly independent $\tau_{(p,1)}$, where $\tau_{(p,1)}<<\tau_{(p+1,1)}$ 
+  \end{itemize}
+$\tau_{(p,1)} := D(T_{2,3})_{p,p+1} \sharp -T_{p,p+1}$
+    \item A family of Top Slice knots lying between $\tau_{(p,1)}$ and $\tau_{(p+1,1)}$ (i.e. $\tau_{(p,1)}<<K_p<<\tau_{(p+1,1)}$ 
+  \end{itemize}
+
 }
 \end{document}
 	

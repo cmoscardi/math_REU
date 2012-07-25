@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+\newtheorem*{def concordance}{Definition}
+\newtheorem*{def concordance group}{Definition}
+\newtheorem*{def slice}{Definition}
+\newtheorem*{Thm C to F}{Theorem}
+
+\begin{document}
+\title{Chain Complex for (D(T_{2,3}))_{p,np+1}}
+\author{Siran Li}
+%\begin{abstract}
+%\end{abstract}
+%\pagebreak
+
+\section{Concordance Group}
+	\subsection{Motivation}
+
+\hspace{6mm}Recall that two knots $K$ and $J$ are {\bf isotopic} if they can be smoothly deformed into each other. Or formally, $\exists$ a homotopy $\kappa:S^{1}\times[0,1]\longrightarrow \mathbb{R}^3$ such that $\kappa \times{0}=K$, and $\kappa \times{1}=J$, and $\kappa \times {t}$ is a smooth embedding, $\forall t\in [0,1]$. Now, we generalise this idea by considering the deformation occured in an extra dimension: we say knots $K$ and $J$ are {\bf topological concordant/(smoothly) concordant} if they can be topologically/smoothly (resp.) deformed into each other in four dimensions. The rigorous definition is: 
+
+	\begin{def concordance}
+	Oriented knots K and J are {\bf topologically concordant/(smoothly) concordant} if $\exists$ annulus $A = S^{1}\times[0,1]$ topologically/smoothly (resp.) embedded into $S^{3}\times [0,1]$, such that $A\cap (S^{3}\times {0})= K\subseteq (S^{3}\times {0})$, and  $A\cap (S^{3}\times {1})= -J\subseteq (S^{3}\times {1})$.
+\\
+	Denote $K \sim_{top}J$ for topological concordance, and $K \sim_{c}J$ for (smooth) concordance).
+	\end{def concordance}
+									\hspace{50mm} [Picture on board]
+
+	\subsection{Concordance Group}
+
+\hspace{6mm}Now comes to our central (algebraic/topological) structure of interest: we note that $({Knots},\sharp) $ forms a monoid, on which $\sim_{c}$ is an equivalence relation. Hence we may define:
+\begin{def concordance group}
+	The {\bf Concordance Group} is $\mathcal{C}:=({Knots},\sharp)/\sim_{c}$
+\end{def concordance group}
+
+	Also, we have the following intuitive definition:
+\begin{def slice}
+	A smooth knot concordant to the unknot is called a {\bf slice knot}. A smooth knoth topologically concordant to the unknot is called a {\bf topological slice knot}.
+\end{def slice}
+
+	\subsection{Morphism between $\mathcal{C}$ and $\mathcal{F}$}
+	
+\hspace{6mm}How shall we study the structure of $\mathcal{C}$? We do so by forming morphisms from $\mathcal{C}$ to other groups of richer algebraic structures, and analyzing those target groups. In our research, we take the group of $\mathbb{Z}\oplus\mathbb{Z}-$filtered chain complexes, $\mathcal{F}$ (which will be discussed in detail later), and we indeed have:
+
+\begin{Thm C to F}
+	There exists group homomorphism $\phi\in{Hom(\mathcal{C},\mathcal{F})}$, such that:
+
+$(1)$ It assigns each (equivalence class of) knot a(n) (equavalence class of) chain complex; in particular, for a special class of knot, {\bf L-space knots}, such assignment is determined by the knot invariant {\bf Alexander Polynomial};
+
+$(2)$ The group operation for $\mathcal{C}$ $(${\bf connected sum}, $\sharp)$ corresponds to the group operation for $\mathcal{F}$ $(${\bf tensor product}, $\otimes)$.
+
+$(3)$ The (equivalence class of) {\bf reversed mirror image} of $K\in\mathcal{C}$, $[-K]$, corresponds to the {\bf dual} of $[\phi(K)]$, denoted as $[{\phi(K)}^{*}]$.
+\end{Thm C to F}
+
+									\hspace{50mm} [Diagram on board]
+
+	\subsection{The group $\mathcal{F}$}
+
+\end{document}

@@ -1,0 +1,63 @@
+\usepackage{color}
+\documentclass{beamer}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newtheorem{prop}{Proposition}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem{lem}[prop]{Lemma}
+\newtheorem{conj}[prop]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\newtheorem*{exam}{Example}
+\newtheorem*{remark}{Remark}
+\newtheorem*{caut}{Caution!}
+\newtheorem*{ques}{Question}
+
+\newtheorem*{thma}{Main Theorem}
+\newtheorem*{thmb}{Theorem B}
+
+\newcommand{\inv}{^{-1}}
+\newcommand{\p}{\pi_1}
+\newcommand{\del}{\partial}
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\lk}{{\mathrm{lk}}}
+\newcommand{\Gn}[1]{G^{(#1)}}
+\newcommand{\pr}[2]{\p({#1})_r^{(#2)}}
+\newcommand{\Gr}[2]{{#1}_r^{(#2)}}
+\renewcommand{\H}[2]{H_{#1}\left({#2}\right)}
+\newcommand{\pn}[2]{\p\left({#1}\right)^{({#2})}}
+\newcommand{\F}{{\mathcal{F}}}
+\newcommand{\C}{{\mathcal{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+\newcommand{\G}{{\mathcal{G}}}
+\newcommand{\dg}{{\mathrm{dg}}}
+\newcommand{\rank}{{\mathrm{rank\ }}}
+\newcommand{\T}{{\mathcal{T}}}
+\newcommand{\im}{{\mathrm{im\ }}}
+\newcommand{\spin}{{\mathrm{spin}}}
+\newcommand{\spinc}{{\mathrm{spin^c}}}
+\newcommand{\N}{{\mathcal{N}}}
+\newcommand{\s}{{\mathfrak{s}}}
+\newcommand{\comfig}{{/Users/peter/Documents/CommonFigures/pdf}}
+\renewcommand{\S}{{\mathcal{S}}}
+\newcommand{\cfkinf}{CFK^\infty}
+
+
+\renewcommand{\P}{{\mathcal{P}}}
+
+% Beamer options
+% ====================================================================
+% ====================================================================
+\usetheme{Dresden}
+%\usecolortheme{wolverine}
+\setbeamertemplate{theorems}[numbered]
+\usecolortheme{orchid}
+\usefonttheme{serif}

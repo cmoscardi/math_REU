@@ -1,0 +1,84 @@
+\usepackage{color}
+\documentclass{beamer}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newtheorem{prop}{Proposition}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem{lem}[prop]{Lemma}
+\newtheorem{conj}[prop]{Conjecture}
+\newtheorem*{def concordance}{Definition}
+
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\newtheorem*{exam}{Example}
+\newtheorem*{remark}{Remark}
+\newtheorem*{caut}{Caution!}
+\newtheorem*{ques}{Question}
+
+\newtheorem*{thma}{Main Theorem}
+\newtheorem*{thmb}{Theorem B}
+
+\newcommand{\inv}{^{-1}}
+\newcommand{\p}{\pi_1}
+\newcommand{\del}{\partial}
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\lk}{{\mathrm{lk}}}
+\newcommand{\Gn}[1]{G^{(#1)}}
+\newcommand{\pr}[2]{\p({#1})_r^{(#2)}}
+\newcommand{\Gr}[2]{{#1}_r^{(#2)}}
+\renewcommand{\H}[2]{H_{#1}\left({#2}\right)}
+\newcommand{\pn}[2]{\p\left({#1}\right)^{({#2})}}
+\newcommand{\F}{{\mathcal{F}}}
+\newcommand{\C}{{\mathcal{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+\newcommand{\G}{{\mathcal{G}}}
+\newcommand{\dg}{{\mathrm{dg}}}
+\newcommand{\rank}{{\mathrm{rank\ }}}
+\newcommand{\T}{{\mathcal{T}}}
+\newcommand{\im}{{\mathrm{im\ }}}
+\newcommand{\spin}{{\mathrm{spin}}}
+\newcommand{\spinc}{{\mathrm{spin^c}}}
+\newcommand{\N}{{\mathcal{N}}}
+\newcommand{\s}{{\mathfrak{s}}}
+\newcommand{\comfig}{{/Users/peter/Documents/CommonFigures/pdf}}
+\renewcommand{\S}{{\mathcal{S}}}
+\newcommand{\cfkinf}{CFK^\infty}
+
+
+\renewcommand{\P}{{\mathcal{P}}}
+
+% Beamer options
+% ====================================================================
+% ====================================================================
+\usetheme{Dresden}
+%\usecolortheme{wolverine}
+\setbeamertemplate{theorems}[numbered]
+\usecolortheme{orchid}
+\usefonttheme{serif}
+\begin{document}
+
+\title[Linearly Independent TOP Slice knots]{A class of linearly independent topologically slice knots}
+\author{team}
+\date{July 29}
+\institute{Columbia}
+
+\frame{\titlepage}
+
+\frame{
+  \framtetitle{The Concordance Group}
+  Recall that two knots $K$ and $J$ are {\bf isotopic} if they can be smoothly deformed into each other. Or formally, $\exists$ a homotopy $\kappa:S^{1}\times[0,1]\longrightarrow \mathbb{R}^3$ such that $\kappa \times{0}=K$, and $\kappa \times{1}=J$, and $\kappa \times {t}$ is a smooth embedding, $\forall t\in [0,1]$. Now, we generalise this idea by considering the deformation occured in an extra dimension: we say knots $K$ and $J$ are {\bf topological concordant/(smoothly) concordant} if they can be topologically/smoothly (resp.) deformed into each other in four dimensions. The rigorous definition is: 
+  \begin{def concordance}
+    Oriented knots K and J are {\bf topologically concordant/(smoothly) concordant} if $\exists$ annulus $A = S^{1}\times[0,1]$ topologically/smoothly (resp.) embedded into $S^{3}\times [0,1]$, such that $A\cap (S^{3}\times {0})= K\subseteq (S^{3}\times {0})$, and  $A\cap (S^{3}\times {1})= -J\subseteq (S^{3}\times {1})$.
+    \\
+    Denote $K \sim_{top}J$ for topological concordance, and $K \sim_{c}J$ for (smooth) concordance).
+  \end{def concordance}
+}
+\end{document}
+	

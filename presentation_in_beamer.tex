@@ -127,5 +127,121 @@ $\tau_{(p,1)} := D(T_{2,3})_{p,p+1} \sharp - T_{p,p+1}$
   \end{itemize}
 
 }
+
+\frame{
+  \frametitle{Technique: Morphism between $\mathcal{C}$ and $\mathcal{F}$}
+  How shall we study the structure of $\mathcal{C}$? We do so by forming morphisms from $\mathcal{C}$ to other groups of richer algebraic structures, and analyzing those target groups. In our research, we take the group of $\mathbb{Z}\oplus\mathbb{Z}-$filtered chain complexes, $\mathcal{F}$ (which will be discussed in detail later), and we indeed have:
+
+
+}
+\frame{
+\begin{thm}
+	There exists group homomorphism $\phi\in{Hom(\mathcal{C},\mathcal{F})}$, such that:
+
+$(1)$ It assigns each (equivalence class of) knot a(n) (equavalence class of) chain complex; in particular, for a special class of knot, {\bf L-space knots}, such assignment is determined by the knot invariant {\bf Alexander Polynomial};
+
+$(2)$ The group operation for $\mathcal{C}$ $(${\bf connected sum}, $\sharp)$ corresponds to the group operation for $\mathcal{F}$ $(${\bf tensor product}, $\otimes)$.
+
+$(3)$ The (equivalence class of) {\bf reversed mirror image} of $K\in\mathcal{C}$, $[-K]$, corresponds to the {\bf dual} of $[\phi(K)]$, denoted as $[{\phi(K)}^{*}]$.
+\end{thm}
+
+}
+\frame{
+  \frametitle{The group of Knot Floer Complexes, $\mathcal{F}$}
+
+  $\mathcal{F}$ is a group of rich algebraic structures: its elements are chain complexes with a natural filtration, and it is a {\bf totally ordered group}. 
+
+  \subsection{$\mathbb{Z}\oplus\mathbb{Z}-$filtered Chain Complexes}
+  \hspace{5mm} A {\bf chain complex} $(C,\partial)$ is a $\mathbb{Z}-$graded vector space with a (vs) homomophism $\partial$ between each two adjacent gradings, such that $\partial\circ\partial=0$. Hence, we have $im(\partial)\subseteq ker(\partial)$. We define the quotient group $H_{*}:=ker(\partial)/im(\partial)$ to be the {\bf homology group} of $(C,\partial)$.
+
+  With the $\mathbb{Z}\oplus\mathbb{Z}-$filtration, we can represent the chain complex $(C,\partial)$ diagramatically on a $\mathbb{Z}\oplus\mathbb{Z}-$ lattice, using arrows to denote boudary map $\partial$.
+
+
+}
+\frame{
+  	\frametitle{Elements of group $\mathcal{F}$}
+\hspace{5mm} We can always perform the {\bf change of basis} process, which preserves the homology, to simplify the $\mathbb{Z}\oplus\mathbb{Z}-$filtered chain complex. A class of "good" complexes obtainable by change of basis, characterised by {\bf Property CFK}, consists of the elements of $\mathcal{F}$.
+
+
+}
+
+\frame{
+  \frametitle{Elements of group $\mathcal{F}$}
+  \begin{defn}
+	A $\mathbb{Z}\oplus\mathbb{Z}-$filtered chain complex is {\bf of Property CFK} if its simplified diagram satisfies the following properties:
+
+   $(1)$ It is symmetric;
+
+   $(2)$ $rank_{\mathbb{F}} \Big(\bigoplus_{n} H_{*}(n^{th} column)\Big)=1$; and
+
+   $(3)$ $rank_{\mathbb{F}} \Big(\bigoplus_{n} H_{*}(n^{th} row)\Big)=1$.
+\end{defn}
+	In fact, $\mathbb{Z}\oplus\mathbb{Z}-$filtered chain complexes of property CFK form a {\bf monoid} under tensor product $\otimes$.
+}
+
+\frame{
+	\frametitle{$\epsilon$-equivalence}
+ Now comes the main thrust: we can define an equivalence relation on the monoid (\{CFK-Chain Complexes\}, $\otimes$), which endows it with the group structure, and further induces a total order.
+}
+
+\frame{
+	\frametitle{$\epsilon$-equivalence}
+\begin{defn}
+	Given a CFK-chain complex $(C,\partial)$, we look for the subspace $x_{0}$ supporting the nontrivial homology (whose existence and uniqueness are guaranteed by (2)(3) in the previous definition), and define:
+
+\[
+  \epsilon(C) = \left\{ 
+  \begin{array}{l l}
+    -1 & \quad \text{if $x_{0}$ has an outgoing horizontal arrow}\\
+    1 & \quad \text{if $x_{0}$ has an incoming horizontal arrow}\\
+    0 & \quad \text {if  $x_{0}$ has no horizontal arrow}\\
+  \end{array} \right.
+\]
+
+	Moreover, we say two CFK-chain complexes $C$ and $C'$ are {\bf $\epsilon$-equivalent}, denoted as $C\sim_{\epsilon}C'$, if $\epsilon \big(C\otimes(C')^{*}\big)=0$.
+\end{defn}
+
+
+}
+
+\frame{
+In fact, $\sim_{\epsilon}$ is an equivalence relation on the CFK-chain complexes. Therefore, we obtain the group $\mathcal{F}$:
+
+
+\begin{defn}
+	The group of {\bf Knot Floer Homology}, $\mathcal{F}$, is defined by:
+\\
+
+\hspace{30mm}$\mathcal{F}$:=\big(\{CFK-chain complexes\}, $\otimes$\big)/$\sim_{\epsilon}$
+\end{defn}
+
+
+	It's easy to see that $\mathcal{F}$ is indeed a group, with trivial chain complex as the identity, and the dual chain complex as the inverse. 
+
+}
+
+
+
+
+
+\frame{
+	\frametitle{Ordering on $\mathcal{F}$}
+
+\hspace{5mm} We have remarked that the $\epsilon$-equivalence induces a total order on $\mathcal{F}$. Indeed, 
+
+\begin{defn}
+	$\big(\mathcal{F},\leq\big)$ is a totally ordered group, with the order $\leq$ given by:
+
+	\[
+   \left\{ 
+  \begin{array}{l l}
+    [C] < [C'] & \quad \text{if  $\epsilon \big( C\otimes (C')^{*}\big)=-1$}\\
+    $[C] = [C']$ & \quad \text {if  $C\sim_{\epsilon}C'$}\\
+  \end{array} \right.
+\]
+\end{defn}
+
+
+}
 \end{document}
 	

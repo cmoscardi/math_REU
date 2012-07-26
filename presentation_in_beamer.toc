@@ -1,1 +1,2 @@
 \beamer@endinputifotherversion {3.20pt}
+\beamer@subsectionintoc {0}{1}{$\mathbb {Z}\oplus \mathbb {Z}-$filtered Chain Complexes}{9}{0}{0}

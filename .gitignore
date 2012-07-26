@@ -1,3 +1,8 @@
 *.pdf
 *.log
 *.dvi
+*.aux
+*.out
+*.nav
+*.snm
+*.toc
